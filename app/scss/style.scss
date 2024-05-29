@@ -373,3 +373,19 @@ body {
     }
   }
 }
+
+.label-and-error {
+  display: flex;
+  justify-content: space-between;
+}
+
+// error state
+.footer__error-text {
+  font-weight: u.weight(semibold);
+  color: #ff7280;
+  display: none;
+}
+
+.error-display {
+  display: block;
+}

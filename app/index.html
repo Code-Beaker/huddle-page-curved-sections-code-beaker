@@ -218,10 +218,16 @@
             To recieve tips on how to grow your community, sign up to our weekly
             newsletter. We’ll never send you spam or pass on your email address
           </p>
-          <form action="index.html" class="footer__form">
-            <label class="footer__form-label" id="#inputStatus" for="emailInput"
-              >Enter your email</label
-            >
+          <form novalidate id="form" action="index.html" class="footer__form">
+            <div class="label-and-error">
+              <label
+                class="footer__form-label"
+                id="#inputStatusText"
+                for="emailInput"
+                >Enter your email</label
+              >
+              <p class="footer__error-text">Please enter a valid Email</p>
+            </div>
             <div class="footer__form-cols">
               <input
                 type="email"
