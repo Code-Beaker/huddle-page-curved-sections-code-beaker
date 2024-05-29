@@ -1,5 +1,6 @@
 @use "./components/" as c;
 @use "./utils/" as u;
+@use "./layouts/" as l;
 
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
@@ -42,5 +43,30 @@ body {
 
   &:focus-visible {
     outline: 0.125rem dotted black;
+  }
+}
+
+// SECTION TWO COLUMN LAYOUT
+.content__cols {
+  @include l.contentCols;
+}
+
+// HERO
+.hero {
+  #{&}__text-content {
+    padding: 2rem;
+    text-align: center;
+  }
+
+  #{&}__heading {
+    font-size: var(--step-2);
+  }
+
+  #{&}__text {
+    font-size: var(--step--1);
+  }
+
+  #{&}__image-content {
+    padding: 2rem;
   }
 }
