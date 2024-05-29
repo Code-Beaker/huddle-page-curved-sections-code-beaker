@@ -109,3 +109,24 @@ body {
     font-size: var(--step--1);
   }
 }
+
+// GROW TOGETHER
+.grow-together {
+  background-color: u.color(neutral__very-pale-blue);
+
+  #{&}__top-curve {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: -100px;
+    left: 0;
+  }
+
+  #{&}__bottom-curve {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    bottom: -45px;
+    left: 0;
+  }
+}
