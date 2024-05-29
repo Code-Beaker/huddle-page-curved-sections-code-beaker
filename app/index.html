@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Huddle Landing Page with Curved Sections | Code-Beaker</title>
     <link rel="stylesheet" href="scss/style.scss" />
     <link rel="stylesheet" href="style.css" />
     <!-- fonts -->
@@ -20,6 +20,7 @@
     />
   </head>
   <body>
+    <a tabindex="0" href="#mainContent" class="skipLink">Skip to content</a>
     <header>
       <nav class="navbar">
         <a href="index.html" class="navbar__brand">
@@ -34,7 +35,7 @@
     </header>
     <main>
       <!-- HERO -->
-      <section class="hero">
+      <section id="mainContent" tabindex="-1" class="hero">
         <div class="hero__cols">
           <section class="hero__text-content">
             <h1 class="hero__heading">
