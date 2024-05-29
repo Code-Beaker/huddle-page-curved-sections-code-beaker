@@ -52,3 +52,31 @@
     outline: 0.125rem dotted black;
   }
 }
+
+@mixin SubmitButton($bg, $wght, $px, $py, $color) {
+  padding: $py $px;
+  color: $color;
+  background-color: $bg;
+  cursor: pointer;
+  font-size: var(--step--1);
+  font-weight: $wght;
+  border-radius: 0.5rem;
+  display: block;
+  border: none;
+  min-width: fit-content;
+  outline-offset: 0.125rem;
+  transition: 150ms ease;
+  transition-property: opacity, scale;
+
+  &:hover {
+    opacity: 0.75;
+  }
+
+  &:active {
+    scale: 0.985;
+  }
+
+  &:focus-visible {
+    outline: 0.125rem dotted white;
+  }
+}
