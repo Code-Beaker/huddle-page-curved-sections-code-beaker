@@ -79,3 +79,33 @@ body {
   );
   font-size: var(--step--1);
 }
+
+// STATS
+.stats {
+  #{&}__container {
+    @include l.statsCols;
+  }
+
+  #{&}__item {
+    text-align: center;
+    padding: 2rem;
+  }
+
+  #{&}__image-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #{&}__icon {
+    max-width: 2rem;
+  }
+
+  #{&}__heading {
+    font-size: var(--step-4);
+  }
+
+  #{&}__text {
+    font-size: var(--step--1);
+  }
+}
