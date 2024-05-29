@@ -130,3 +130,24 @@ body {
     left: 0;
   }
 }
+
+// YOUR USERS CURVES
+.users {
+  background-color: u.color(neutral__very-pale-blue);
+
+  #{&}__curve-top {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: -100px;
+    left: 0;
+  }
+
+  #{&}__curve-bottom {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    bottom: -100px;
+    left: 0;
+  }
+}
