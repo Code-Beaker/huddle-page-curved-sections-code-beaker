@@ -1,9 +1,19 @@
 /* THIS FILE CONTAINS DIFFERENT @mixins AND CLASSES FOR THE ELEMENTS INSIDE THE DOCUMENT. THESE STYLES ARE DECLARED IN THIS FILE TO REDUCE THE AMOUNT OF LINES IN style.scss */
 
+.hero__cols {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
 @mixin contentCols {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1rem;
+
+  @media screen and (width > 50rem) {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @mixin statsCols {
@@ -17,8 +27,16 @@
   margin-block: 6rem;
   position: relative;
 
+  @media screen and (width > 50rem) {
+    margin-block: 10rem;
+  }
+
   #{&}__heading {
     font-size: var(--step-2);
+
+    @media screen and (width > 50rem) {
+      font-size: var(--step-4);
+    }
   }
 
   #{&}__text {
@@ -28,9 +46,25 @@
 
 .section__image-content {
   padding: 2rem;
+
+  @media screen and (width > 50rem) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.content__image {
+  @media screen and (width > 50rem) {
+    max-width: 30rem;
+  }
 }
 
 .section__text-content {
   text-align: center;
   padding: 2rem;
+
+  @media screen and (width > 50rem) {
+    padding: 8rem 4rem;
+  }
 }
