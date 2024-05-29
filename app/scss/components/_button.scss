@@ -68,6 +68,12 @@
   transition: 150ms ease;
   transition-property: opacity, scale;
 
+  @media screen and (width > 50rem) {
+    & {
+      max-width: 15rem;
+    }
+  }
+
   &:hover {
     opacity: 0.75;
   }

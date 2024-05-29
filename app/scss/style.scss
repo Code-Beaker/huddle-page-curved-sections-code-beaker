@@ -233,6 +233,19 @@ body {
 // FOOTER
 .footer__bottom {
   background-color: u.color(neutral__very-dark-cyan);
+  position: relative;
+
+  #{&}__curve-top {
+    position: absolute;
+    top: -55px;
+    left: 0;
+    width: 100%;
+    height: auto;
+
+    @media screen and (width > 50rem) {
+      top: -145px;
+    }
+  }
 
   .footer__cols {
     display: grid;
@@ -250,6 +263,10 @@ body {
     color: u.color(neutral__white);
 
     @media screen and (width > 50rem) {
+      & {
+        padding: 4rem;
+      }
+
       &:first-child {
         order: 2;
       }
