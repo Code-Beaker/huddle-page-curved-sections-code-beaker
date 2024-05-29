@@ -1,9 +1,14 @@
-@mixin ButtonBorder($color, $bg, $border) {
-  padding: 0.75rem 1.5rem;
+@mixin ButtonBorder($color, $bg, $border, $py, $px, $wght) {
+  padding: $py $px;
+  font-weight: $wght;
   border-radius: 5rem;
   display: block;
-  border: 2px solid $border;
+  text-transform: capitalize;
+  border: 1px solid $border;
   color: $color;
   background-color: $bg;
+  outline-offset: 0.125rem;
   text-decoration: none;
+  transition: 150ms ease;
+  transition-property: opacity, scale;
 }

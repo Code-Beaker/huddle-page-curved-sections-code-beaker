@@ -4,6 +4,7 @@ $colors: (
   "primary__link-red": hsl(0, 100%, 63%),
   "neutral__very-dark-cyan": hsl(192, 100%, 9%),
   "neutral__very-pale-blue": hsl(207, 100%, 98%),
+  "neutral__white": hsl(0, 0%, 100%),
 );
 
 @function color($color-name) {
