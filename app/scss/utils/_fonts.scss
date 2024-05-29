@@ -1,3 +1,12 @@
+$fonts: (
+  "title": "Poppins",
+  "text": "Open Sans",
+);
+
+@function font($font-name) {
+  @return map-get($fonts, $font-name);
+}
+
 $font-weights: (
   "regular": 400,
   "semibold": 600,

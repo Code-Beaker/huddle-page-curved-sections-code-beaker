@@ -7,6 +7,21 @@ body {
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
+h1,
+h2,
+h3,
+h4 {
+  font-family: u.font(title);
+}
+
+p,
+a,
+button,
+input,
+label {
+  font-family: u.font(text);
+}
+
 .navbar {
   @include c.navbar(u.color(neutral__white));
 
