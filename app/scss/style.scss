@@ -151,3 +151,12 @@ body {
     left: 0;
   }
 }
+
+// READY TO BUILD YOUR COMMUNITY
+.getStartedToday {
+  text-align: center;
+
+  #{&}__btn-center {
+    padding: 2rem;
+  }
+}
