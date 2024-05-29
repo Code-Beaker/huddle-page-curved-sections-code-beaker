@@ -7,6 +7,15 @@
     <title>Vite App</title>
     <link rel="stylesheet" href="scss/style.scss" />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="assets/images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
   </head>
   <body>
     <header>
@@ -177,6 +186,80 @@
         </div>
       </section>
     </main>
+    <footer class="footer__bottom">
+      <div class="footer__cols">
+        <section class="footer__section">
+          <h3 class="footer__heading">Newsletter</h3>
+          <p class="footer__text">
+            To recieve tips on how to grow your community, sign up to our weekly
+            newsletter. We’ll never send you spam or pass on your email address
+          </p>
+          <form action="index.html" class="footer__form">
+            <label class="footer__form-label" id="#inputStatus" for="emailInput"
+              >Enter your email</label
+            >
+            <div class="footer__form-cols">
+              <input
+                type="email"
+                placeholder="example@email.com"
+                id="emailInput"
+                class="footer__form-input"
+              />
+              <button class="submitButton footer__form-submit">
+                Subscribe
+              </button>
+            </div>
+          </form>
+        </section>
+        <section class="footer__section">
+          <div class="footer__logo">
+            <img src="assets/images/logo.svg" alt="" />
+          </div>
+          <p class="footer__section-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
+            nulla quam, hendrerit lacinia vestibulum a, ultrices quis sem.
+          </p>
+          <ul class="footer__list">
+            <li class="footer__list-item footer__phone">
+              Phone: +1-543-123-4567
+            </li>
+            <li class="footer__list-item footer__email">example@huddle.com</li>
+          </ul>
+          <ul class="footer__social-icons">
+            <li>
+              <a
+                aria-hidden="false"
+                aria-label="Facebook"
+                href="#"
+                class="footer__social-icon"
+              >
+                <i class="bi bi-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                aria-hidden="false"
+                aria-label="Instagram"
+                href="#"
+                class="footer__social-icon"
+              >
+                <i class="bi bi-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                aria-hidden="false"
+                aria-label="Twitter"
+                href="#"
+                class="footer__social-icon"
+              >
+                <i class="bi bi-twitter"></i>
+              </a>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </footer>
     <script type="module" src="/main.js"></script>
   </body>
 </html>
