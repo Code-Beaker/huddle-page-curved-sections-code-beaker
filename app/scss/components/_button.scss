@@ -11,4 +11,44 @@
   text-decoration: none;
   transition: 150ms ease;
   transition-property: opacity, scale;
+
+  &:hover {
+    opacity: 0.75;
+  }
+
+  &:active {
+    scale: 0.985;
+  }
+
+  &:focus-visible {
+    outline: 0.125rem dotted black;
+  }
+}
+
+@mixin PrimaryButton($bg, $color, $px, $py, $wght) {
+  padding: $py $px;
+  flex: 1;
+  border-radius: 5rem;
+  text-decoration: none;
+  background-color: $bg;
+  color: $color;
+  font-weight: $wght;
+  display: block;
+  min-width: fit-content;
+  outline-offset: 0.125rem;
+  text-decoration: none;
+  transition: 150ms ease;
+  transition-property: opacity, scale;
+
+  &:hover {
+    opacity: 0.75;
+  }
+
+  &:active {
+    scale: 0.985;
+  }
+
+  &:focus-visible {
+    outline: 0.125rem dotted black;
+  }
 }

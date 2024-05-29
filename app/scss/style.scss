@@ -32,18 +32,6 @@ body {
     1rem,
     u.weight(semibold)
   );
-
-  &:hover {
-    opacity: 0.75;
-  }
-
-  &:active {
-    scale: 0.985;
-  }
-
-  &:focus-visible {
-    outline: 0.125rem dotted black;
-  }
 }
 
 // SECTION TWO COLUMN LAYOUT
@@ -60,13 +48,34 @@ body {
 
   #{&}__heading {
     font-size: var(--step-2);
+    margin-bottom: 1rem;
   }
 
   #{&}__text {
     font-size: var(--step--1);
   }
 
+  //   BUTTON WRAPPER
+  #{&}__btn-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-block: 2rem;
+  }
+
   #{&}__image-content {
     padding: 2rem;
   }
+}
+
+// PRIMARY BUTTON
+.btn-primary {
+  @include c.PrimaryButton(
+    u.color(primary__pink),
+    u.color(neutral__white),
+    1.25rem,
+    1.25rem,
+    u.weight(bold)
+  );
+  font-size: var(--step--1);
 }
