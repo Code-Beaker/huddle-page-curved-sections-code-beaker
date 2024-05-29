@@ -1,0 +1,9 @@
+$font-weights: (
+  "regular": 400,
+  "semibold": 600,
+  "bold": 700,
+);
+
+@function weight($weight-name) {
+  @return map-get($font-weights, $weight-name);
+}
