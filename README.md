@@ -70,6 +70,9 @@ Here's how the Validator library is used in this project.
 ![alt text](image-3.png)
 
 ## Links
+- [GitHub Repository](https://github.com/Code-Beaker/huddle-page-curved-sections-code-beaker/)
+- [Netlify Deploy](https://huddle-home-curved-code-beaker.netlify.app/) 
+  [Vercel Deploy](https://huddle-page-curved-sections-code-beaker.vercel.app/)
 
-- [GitHub Repository](https://github.com/Code-Beaker/huddle-page-curved-sections-code-beaker)
-- [Live Site URL](https://huddle-page-curved-sections-code-beaker.vercel.app/)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/dfaf43da-4e30-42d1-8eda-9b75921cd592/deploy-status)](https://app.netlify.com/sites/huddle-home-curved-code-beaker/deploys)
+
